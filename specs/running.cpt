@@ -1,0 +1,49 @@
+Created by SONER on 16.07.2021
+
+This is a concept file with following syntax for each concept.
+# Açılış kontrolü ve alışverişe başla
+* "5" saniye bekle
+* "com.ozdilek.ozdilekteyim:id/tv_startShoppingStore" id li element "ALIŞVERİŞE BAŞLA" değerini  içerdiğini kontrol et
+* "5" saniye bekle
+* "com.ozdilek.ozdilekteyim:id/tv_startShoppingStore" id li elemente tıkla
+* "5" saniye bekle
+* "//*[@text='Anasayfa']" xpath li element "Anasayfa" değerini  içerdiğini kontrol et
+//* "//*[@text='Mağaza']" xpath li element "Mağaza" değerini  içerdiğini kontrol et
+
+
+# Kategori ile favori ürün arama
+* "com.ozdilek.ozdilekteyim:id/nav_categories" id li elemente tıkla
+* "2" saniye bekle
+//* "//android.widget.LinearLayout[@content-desc='Kategoriler']/android.widget.TextView" xpath li element "Kategoriler" değerini  içerdiğini kontrol et
+* "//*[@text='Kategoriler']" xpath li element "Kategoriler" değerini  içerdiğini kontrol et
+* "2" saniye bekle
+* "//*[@text='Kadın']" xpath li elemente tıkla
+* "2" saniye bekle
+* "//*[@text='Pantolon']" xpath li elemente tıkla
+* "4" saniye bekle
+
+#Sayfa sonuna git
+* aşağı kaydır
+* aşağı kaydır
+* aşağı kaydır
+
+#Favori ürün ekle
+* "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout[2]/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[6]/android.view.ViewGroup/android.widget.ImageView[2]" xpath li elemente tıkla
+
+#Kontroller ve kapanış
+* "com.ozdilek.ozdilekteyim:id/btnLogin" id li element "Giriş Yap" değerini  içerdiğini kontrol et
+* "2" saniye bekle
+* "com.ozdilek.ozdilekteyim:id/ivBack" id li elemente tıkla
+* "2" saniye bekle
+*  "//*[@text='Kategoriler']" xpath li element "Kategoriler" değerini  içerdiğini kontrol et
+* "2" saniye bekle
+* "com.ozdilek.ozdilekteyim:id/nav_account" id li elemente tıkla
+* "2" saniye bekle
+* "com.ozdilek.ozdilekteyim:id/btnLogin" id li element "Giriş Yap" değerini  içerdiğini kontrol et
+* "2" saniye bekle
+* "com.ozdilek.ozdilekteyim:id/ivBack" id li elemente tıkla
+* "2" saniye bekle
+*  "//*[@text='Kategoriler']" xpath li element "Kategoriler" değerini  içerdiğini kontrol et
+* "com.ozdilek.ozdilekteyim:id/nav_cart" id li elemente tıkla
+* "2" saniye bekle
+* "com.ozdilek.ozdilekteyim:id/btnLogin" id li element "Giriş Yap" değerini  içerdiğini kontrol et
